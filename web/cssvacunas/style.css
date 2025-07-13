@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Panel Izquierdo */
+.left-panel {
+  flex: 1;
+  background: linear-gradient(to bottom right, #baf2e9, #8ee3ec);
+  color: #003049;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.icono-vacuna {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.title h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.title span {
+  font-weight: 300;
+}
+
+.slogan {
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+/* Panel Derecho */
+.right-panel {
+  flex: 1;
+  background: white;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-panel h2 {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  color: #003049;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+input {
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 0.75rem;
+  background: #28cfd0;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #22b5b6;
+}
+
+.register {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.register a {
+  color: #28cfd0;
+  text-decoration: none;
+}
+
+.message-box {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+.message-box ul {
+  padding-left: 1rem;
+}
