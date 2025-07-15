@@ -1,0 +1,146 @@
+/* ----------------------------------------- */
+/* Reset general de márgenes y cajas         */
+/* ----------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------- */
+/* Estilos base del cuerpo                   */
+/* ----------------------------------------- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ----------------------------------------- */
+/* Contenedor principal (divide en 2 paneles)*/
+/* ----------------------------------------- */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* ----------------------------------------- */
+/* Panel izquierdo (más ancho)               */
+/* ----------------------------------------- */
+.left-panel {
+  flex: 1.3; /* 30% más ancho que el derecho */
+  background: linear-gradient(425deg, #ffffff 40%, #2EC1BD);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  height: 100vh;
+}
+.logo {
+  width: 200px; 
+  position: absolute;
+  top: 0.2rem; /* Subido ligeramente */
+  left: 1.5rem;
+}
+
+.icono {
+  width: 320px;
+  height: auto;
+  margin-bottom: 0.1rem; /* Reducido de 2rem para acercar al slogan */
+  margin-top: 6rem; /* Empuja el icono hacia abajo */
+}
+
+.slogan {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #003049;
+  text-align: center;
+  margin-top: 0.2rem;  /* Reducido aún más (era 0.5rem) */
+  line-height: 1.3;
+  max-width: 80%;
+  position: relative;  /* Permite ajustes finos */
+  top: -3rem;       /* Mueve el elemento hacia arriba */
+}
+/* ----------------------------------------- */
+/* Panel derecho                             */
+/* ----------------------------------------- */
+.right-panel {
+  flex: 1;
+  background: white;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.right-panel h2 {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  color: #003049;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 380px;
+}
+
+.form-group {
+  margin-bottom: 1.8rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #003049;
+  font-size: 0.95rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.85rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.btn {
+  width: auto;
+  padding: 0.85rem 2.5rem;
+  background: #28cfd0;
+  border: none;
+  border-radius: 12px; /* redondez */
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 0.5rem;
+  align-self: flex-start;
+}
+.btn:hover {
+  background: #22b5b6;
+}
+
+.register {
+  margin-top: 2rem;
+  text-align: left;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.register a {
+  color: #28cfd0;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase; /* "CREA UNA AHORA" en mayúsculas */
+}
